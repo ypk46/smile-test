@@ -37,7 +37,7 @@ def detect(cascade: str, model: str, video: str):
 
     # Check if video file was not supplied
     if not video:
-        camera = cv2.VideoCapture(1)
+        camera = cv2.VideoCapture(0)
     else:
         camera = cv2.VideoCapture(video)
 

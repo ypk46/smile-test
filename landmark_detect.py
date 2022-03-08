@@ -31,7 +31,7 @@ def detect(predictor: str, file: str):
 
     # Check if video file was not supplied
     if not file:
-        camera = cv2.VideoCapture(1)
+        camera = cv2.VideoCapture(0)
     else:
         camera = cv2.VideoCapture(file)
 
